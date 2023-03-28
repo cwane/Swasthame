@@ -1,0 +1,87 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    background-color: rgb(31, 123, 51);
+}
+.card1 {
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    padding: 16px 24px;
+    border-color:rgb(31, 123, 51) ;
+    border-radius: 8px;
+    /* text-align-last: center; */
+    
+}
+.card2{
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    padding: 16px 24px;
+    border-color:rgb(31, 123, 51) ;
+    border-radius: 8px;
+    /* text-align-last: center; */
+    
+}
+h2{
+    color: rgb(31, 123, 51);
+}
+
+/* .btn btn-primary{
+    background-color: aquamarine;
+    /* color: rgb(115, 17, 17); */
+    /*padding: 20px;
+
+} */
+
+/* .form-contact{
+    background-color:#008000;
+    color:#fff;
+    /* text-align: left; */
+    /*padding: 20px 60px;
+    text-transform: uppercase !important;
+}    */
+.form-contact>h1{
+    /* text-align: center; */
+    padding: 100px
+}
+/* .form-check{
+    padding-top:16px !important;
+} */
+/* .rate{
+    display:block;
+} */
+/* .form-range{
+    padding: 16px;
+    width:150px !important;
+} */
+.form-control{
+    padding-top:5px !important;
+    padding-bottom: 5px !important;
+    width: 30%!important;
+    display: block;
+    
+}
+/* .form-control:hover{
+    border: 2px solid #c0bfbf!important;
+} */
+/* .mb-5 .button2{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #fff;
+    color:#000;
+    width: 30%!important;
+} */
+

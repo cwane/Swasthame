@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --text-color-secondary : #8D919C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #F4F6FA;
+}
+
+/* header */
+.header {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_sub, .title_date, .progress_title {
+    color:var(--text-color-secondary);
+}
+
+.title_main {
+    font-size: 3rem;
+}
+
+.header__progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* progress bar */
+.progress {
+    display: flex;
+    gap: 20px;
+}
+
+.progress_calorie, .progress_fats, .progress_protein, .progress_sugar {
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calorie_count__title {
+    color: #5FE397;
+    font-weight: bold;
+}
+
+.fats_count__title {
+    color: #FD9CAB;
+    font-weight: bold;
+}
+
+.protein_count__title {
+    color: #45E4C1;
+    font-weight: bold;
+}
+
+.sugar_count__title {
+    color: #2B9FF2;
+    font-weight: bold;
+}
+
+#calorie_count, #fats_count, #protein_count, #sugar_count{
+    text-align: center;
+}
+
+.calorie_count__value,
+.fats_count__value,
+.protein_count__value,
+.sugar_count__value {
+    font-size: 0.8rem;
+    color: var(--text-color-secondary);
+}
+
+circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+}
+
+.progress_calorie circle {
+    stroke: url(#GradientColorCalorie);
+}
+
+.progress_fats circle {
+    stroke: url(#GradientColorFats);
+}
+
+.progress_protein circle {
+    stroke: url(#GradientColorProtein);
+}
+
+.progress_sugar circle {
+    stroke: url(#GradientColorSugar);
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 80px;
+    border-top: 1.5px solid #E5E5E5;
+}
+
+/* cards section */
+.card {
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.content {
+    font-size: 0.8rem;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #E5E5E5;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #2699dc;
+    cursor: pointer;
+}
+

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:rgb(31, 123, 51);
+}
+
+.card {
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    padding: 16px 24px;
+
+    border-radius: 8px;
+    text-align-last: center;
+    
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading_title {
+    font-size: 1.2rem;
+}
+
+.heading_title>span {
+    color: #818181;
+    margin-left: 4px;
+}
+
+.dropdown {
+    border: 1.5px solid #d2d2d2;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 16px;
+}
+
+.number {
+    font-size: 2rem;
+}
+
+.number > span {
+    font-size: 1.3rem;
+    color: #818181;
+}
+
+.goal_sub, .completion_sub {
+    color: #818181;
+}
+
+.progress-bar {
+    margin: 34px 50px;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    /* border: 1px solid orangered; */
+    border-radius: 50%;
+
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    /* border: 1px solid orangered; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 157.5;
+    }
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:not(:last-child) {
+    padding-bottom: 12px;
+    border-bottom: 1.2px solid #dddddd;
+}
+
+.percentage, .more {
+    color: #818181;
+}

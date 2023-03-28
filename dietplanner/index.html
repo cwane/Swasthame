@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__title">
+                <div class="title_sub">PLAN YOUR DAY</div>
+                <div class="title_main">Meal Planner</div>
+                <div class="title_date">February 11, 2023</div>
+            </div>
+            <div class="header__progress">
+                <div class="progress_title">SET GOAL TODAY</div>
+                <div class="progress">
+                    <div class="progress_calorie">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="calorie_count">
+                                    <div class="calorie_count__title">
+                                        Calories
+                                    </div>
+                                    <div class="calorie_count__value">
+                                        1000 / 2500
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                            <linearGradient id="GradientColorCalorie">
+                            <stop offset="0%"
+                            stop-color="#5FE397" />
+                            <stop offset="100%"
+                            stop-color="#AFEE81" />
+                            </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70"
+                            stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="progress_fats">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="fats_count">
+                                    <div class="fats_count__title">
+                                        Fats
+                                    </div>
+                                    <div class="fats_count__value">
+                                        50 / 150
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                            <linearGradient id="GradientColorFats">
+                            <stop offset="0%"
+                            stop-color="#FD9CAB" />
+                            <stop offset="100%"
+                            stop-color="#FF4B8E" />
+                            </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70"
+                            stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="progress_protein">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="protein_count">
+                                    <div class="protein_count__title">
+                                        Protein
+                                    </div>
+                                    <div class="protein_count__value">
+                                        30 / 175
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                            <linearGradient id="GradientColorProtein">
+                            <stop offset="0%"
+                            stop-color="#45E4C1" />
+                            <stop offset="100%"
+                            stop-color="#56F3AF" />
+                            </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70"
+                            stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="progress_sugar">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="sugar_count">
+                                    <div class="sugar_count__title">
+                                        Sugar
+                                    </div>
+                                    <div class="sugar_count__value">
+                                        75 / 150
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                            <linearGradient id="GradientColorSugar">
+                            <stop offset="0%"
+                            stop-color="#2B9FF2" />
+                            <stop offset="100%"
+                            stop-color="#7EE9FA" />
+                            </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70"
+                            stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="card">
+                <img src="./images/charred.jpg" height="195px" width="300px"/>
+                <div class="card_title">Charred Veggie and Fried Goat Cheese Salad</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/spicy.jpg" height="195px" width="300px"/>
+                <div class="card_title">Low Carb Spicy Baked Eggs with Cheesy Hash</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/keto.jpg" height="195px" width="300px"/>
+                <div class="card_title">Keto Chorizo Shakshuka with Some Beans</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/kitchri.jpg" height="195px" width="300px"/>
+                <div class="card_title">Easy One-Pot Indian Home Cooked Kitchri</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/roti.jpg" height="195px" width="300px"/>
+                <div class="card_title">Indian Homemade Light Roti and potatoes</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/paratha.jpg" height="195px" width="300px"/>
+                <div class="card_title">Oilless and Masala-less Minimal Paratha</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/veg.jpg" height="195px" width="300px"/>
+                <div class="card_title">Indian Styled Tasty Vegetable Salad Yummy!</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/chukauni.jpg" height="195px" width="300px"/>
+                <div class="card_title">Yoghurt Mixed with Potatoe and Onions</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/daal.jpg" height="195px" width="300px"/>
+                <div class="card_title">Very Very Simple and Healthy Daal Made in Home</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/charred.jpg" height="195px" width="300px"/>
+                <div class="card_title">Charred Veggie and Fried Goat Cheese Salad</div>
+                <div class="content">
+                    <div class="content__calorie">
+                        <div class="content__calorie__title">Calories</div>
+                        <div class="content__calorie__value">260</div>
+                    </div>
+                    <div class="content__fats">
+                        <div class="content__fats__title">Fats</div>
+                        <div class="content__fats__value">26.06g</div>
+                    </div>
+                    <div class="content__protein">
+                        <div class="content__protein__title">Protein</div>
+                        <div class="content__protein__value">14.0g</div>
+                    </div>
+                    <div class="content__sugar">
+                        <div class="content__sugar__title">Sugar</div>
+                        <div class="content__sugar__value">1.0g</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="add-to-cart">🛒 Add to Cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

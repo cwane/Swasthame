@@ -1,0 +1,38 @@
+/* contact part start */
+.samparka .whole{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap-reverse;
+}
+.samparka .whole form{
+    flex: 1 1 40rem;
+    border: .1rem solid var(--dim);
+    border-radius: .5rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1.5rem var(--shadow);
+    padding: 2rem 2.5rem;
+}
+.samparka .whole .image{
+    flex: 1 1 40rem;
+}
+.samparka .whole .image img{
+    width: 100%;
+}
+.samparka .whole form .box{
+    font-size: 2rem;
+    text-transform: none;
+    border-radius: .5rem;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+    color: var(--secondary);
+    border: .1rem solid var(--shadow);
+}
+.samparka .whole form .box:focus{
+    border-color: var(--primary);
+}
+.samparka .whole form textarea{
+    height: 16rem;
+    resize: none;
+}

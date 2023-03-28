@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="progress.css">
+    <script defer src="progress.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="heading">
+            <div class="heading_title">Activity Goal <span>•••</span></div>
+            <div class="dropdown">
+                <span>3052 points</span>
+                <img width="20px" src="https://img.icons8.com/emoji/48/null/glowing-star.png"/>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="goal">
+                <div class="number">
+                    65 <span>%</span>
+                </div>
+                <div class="goal_sub">
+                    Goal Completion
+                </div>
+            </div>
+            <div class="completion">
+                <div class="number">
+                    21 <span>/27</span>
+                </div>
+                <div class="completion_sub">
+                    Achievements
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="outer">
+                <div class="inner">
+                    <div id="number">
+                        65%
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                <linearGradient id="GradientColor">
+                <stop offset="0%"
+                stop-color="#32c752" />
+                <stop offset="100%"
+                stop-color="#1f7b33" />
+                </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70"
+                stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="categories">
+            <div class="item">
+                <div style="display: flex;">
+                    <img style="border-radius: 4px; margin-right: 4px;" width="20px" height="20px"" src="data:image/jpeg;base64,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" />
+                    <div class="title">Diet Planning</div>
+                </div>
+                <div class="progress">7/10</div>
+                <div class="percentage">70%</div>
+                <div class="more">•••</div>
+            </div>
+            <div class="item">
+                <div style="display: flex;">
+                    <img style="border-radius: 4px; margin-right: 4px;" width="20px" height="20px"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPHREDFuAzaABb1XB5o0pIEOualwo4Zkp9A&usqp=CAU" />
+                    <div class="title">Nutrition Intake</div>
+                </div>
+                <div class="progress">6/10</div>
+                <div class="percentage">60%</div>
+                <div class="more">•••</div>
+            </div>
+            <div class="item">
+                <div style="display: flex;">
+                    <img style="border-radius: 4px; margin-right: 4px;" width="20px" height="20px"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7fHRR1v-7uVHcOBsmmSmKxOohfC8bEs1Wg&usqp=CAU" />
+                    <div class="title">Weight Planning</div>
+                </div>
+                <div class="progress">3/10</div>
+                <div class="percentage">30%</div>
+                <div class="more">•••</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

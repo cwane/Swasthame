@@ -1,0 +1,30 @@
+.card{
+    background-color:#c75d56!important;
+    color:#fff;
+    height:100%;
+    text-align: left;
+    padding: 20px 60px;
+    text-transform: uppercase !important;
+}
+#range-value{
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-body>h1{
+ text-align: center; 
+ padding:30px 0px;
+}
+.greyscale{
+    filter: grayscale(75%);
+}
+.image-chef{
+    height: 100%;
+    width:200px;
+    float:right !important;
+}
+.card-img-top{
+    height: 100%;
+    width:100%;
+    width:75%;
+
+}
